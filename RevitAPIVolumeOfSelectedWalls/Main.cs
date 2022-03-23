@@ -21,7 +21,7 @@ namespace RevitAPIVolumeOfSelectedWalls
             IList<Reference> selectedElementRefList = null;
             try
             {
-                selectedElementRefList = uidoc.Selection.PickObjects(Autodesk.Revit.UI.Selection.ObjectType.Element, new WallFilter(), "Выберите стены");
+                selectedElementRefList = uidoc.Selection.PickObjects(Autodesk.Revit.UI.Selection.ObjectType.Element, new WallFilter(), "Выберите стены по грани");
             }
             catch (Autodesk.Revit.Exceptions.OperationCanceledException)
             {}
